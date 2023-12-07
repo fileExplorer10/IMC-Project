@@ -1,0 +1,174 @@
+    @charset "UTF-8";
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/health.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-left: 2%;
+        padding-right: 2%;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        height: 12%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        width: 30px;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .row {
+        display: flex;
+        height: 88%;
+        align-items: center;
+    }
+
+    .col {
+        flex-basis: 50%;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 70px;
+    }
+    h2 {
+        color: #fff;
+        font-size: 60px;
+    }
+    p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 15px;
+        text-align: justify;
+        padding: 1%;
+    }
+
+    /* Estilizando caixas de texto */
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Estilizando botão de calcular */
+    .button {
+        width: 100%;
+        color: #000;
+        font-size: 14px; 
+        padding: 12px 0;
+        background: #fff;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .card {
+        width: 200px;
+        height: 230px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+      
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card1{
+        background-image: url(../imagens/pic1.jpg);
+    }
+    .card2{
+        background-image: url(../imagens/pic2.jpg);
+    }
+    .card3{
+        background-image: url(../imagens/pic3.jpg);
+    }
+    .card4{
+        background-image: url(../imagens/pic4.jpg);
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+    }
+    h5{
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+    }
+    .card p{
+        text-shadow: 0 0 5px #000;
+        font-size: 11px;
+    }
+
+    /* Melhorar responsividade para caixas de texto */
+    @media only screen and (max-width: 600px) {
+        input {
+            width: calc(100% - 20px);
+        }
+
+        .button {
+            width: calc(100% - 20px);
+        }
+    }
+
+     .card-expandido {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 999;
+            padding: 20px;
+            box-sizing: border-box;
+        }
